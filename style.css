@@ -16,7 +16,9 @@
 html {
     scroll-behavior: smooth;
 }
-
+body{
+    overflow-x: clip;
+}
 #about,
 #skills,
 #project,
@@ -29,7 +31,7 @@ header{
     justify-content: space-between;
     background-color: rgb(0, 0, 30);
     padding: 20px 40px;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 10;
@@ -67,7 +69,6 @@ header > ul{
     font-weight: bold;
 }
 .info{
-    margin-top: 58.4px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 410px), 1fr));
     background-color: rgb(195, 223, 234);
